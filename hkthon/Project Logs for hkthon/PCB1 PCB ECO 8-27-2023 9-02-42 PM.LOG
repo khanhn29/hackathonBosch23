@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=GND Pin=H?-2
+Removed Pin From Net: NetName=GND Pin=U?-2
+Removed Pin From Net: NetName=GND Pin=U?-29
+Removed Member From Class: ClassName=Sheet1 Member=U?
+Change Component Comment : Designator=H? Old Comment=Power New Comment=Power 5v
+Added Component: Designator=A?(XCVR_ESP32-WROVER-I)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESP32-WROVER-I"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=H?-1
+Added Pin To Net: NetName=GND Pin=H?-1
+Added Pin To Net: NetName=FL-A Pin=H?-2
+Added Net: Name=FL-A
+Added Pin To Net: NetName=FL-B Pin=H?-3
+Added Net: Name=FL-B
+Added Pin To Net: NetName=FR-A Pin=H?-4
+Added Net: Name=FR-A
+Added Pin To Net: NetName=FR-B Pin=H?-5
+Added Net: Name=FR-B
+Added Pin To Net: NetName=RL-A Pin=H?-2
+Added Net: Name=RL-A
+Added Pin To Net: NetName=RL-B Pin=H?-3
+Added Net: Name=RL-B
+Added Pin To Net: NetName=RR-A Pin=H?-4
+Added Net: Name=RR-A
+Added Pin To Net: NetName=RR-B Pin=H?-5
+Added Net: Name=RR-B
+Added Member To Class: ClassName=Sheet1 Member=Component A? ESP32-WROVER-I
+Added Member To Class: ClassName=Sheet1 Member=Component H? Power 5v
+Added Member To Class: ClassName=Sheet1 Member=Component H? LM298N front

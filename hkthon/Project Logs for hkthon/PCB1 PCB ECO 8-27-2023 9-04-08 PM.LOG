@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=GND Pin=A?-1
+Added Pin To Net: NetName=GND Pin=A?-15
+Added Pin To Net: NetName=GND Pin=A?-38
+Added Pin To Net: NetName=GND Pin=H?-2
+Added Pin To Net: NetName=+5 Pin=A?-19
+Added Pin To Net: NetName=+5 Pin=H?-1
+Added Net: Name=+5
+Added Member To Class: ClassName=Sheet1 Member=Component H? LM298N front
+Added Member To Class: ClassName=Sheet1 Member=Component H? Power 5v
