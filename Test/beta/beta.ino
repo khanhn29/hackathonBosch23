@@ -31,7 +31,7 @@ void setup() {
   delay(5000);
 }
 void loop() {
-  String inputString = "SSOWWEODDDEOSSEOWWEOAAAEOQWW";
+  String inputString = "wwweowwwweodddossseoqwwwo";
 
   int stringLength = inputString.length(); // Get the length of the string
   inputString.toLowerCase();
