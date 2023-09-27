@@ -1,9 +1,7 @@
 #include <WiFi.h>
-#include <AsyncTCP.h>
-#include <ESPAsyncWebSrv.h>
 #include "html.h"
 
-const char* htmlForm = "<html>\
+String htmlForm = "<html>\
 <head>\
 <style>\
 table, th, td {\
@@ -68,8 +66,7 @@ table, th, td {\
         </tr>\
       </table>\
       <p>Last command: ";
+
 String htmlFormPart2 = "<p/></form>\
 </body>\
 </html>";
-
-AsyncWebServer server(80);
