@@ -42,6 +42,9 @@ void setup() {
   pwm.begin();
   pwm.setPWMFreq(60);
 
+//Set LED
+  pinMode(LED_BUILTIN, OUTPUT);
+
 //Setup pin motor
   pinMode(MOTOR_FR_IN1, OUTPUT);
 	pinMode(MOTOR_FR_IN2, OUTPUT);
@@ -81,6 +84,7 @@ void loop() {
   WiFiClient client = server.available();   // Listen for incoming clients
 
   if (client) {                             // If a new client connects,
+    digitalWrite(LED_BUILTIN, HIGH);
     Serial.println("New Client.");          // print a message out in the serial port
     String currentLine = "";                // make a String to hold incoming data from the client
     while (client.connected()) {            // loop while the client's connected
@@ -141,6 +145,9 @@ void loop() {
     client.stop();
     Serial.println("Client disconnected.");
     Serial.println("");
+  }
+  else{
+    digitalWrite(LED_BUILTIN, LOW);
   }
 }
 
