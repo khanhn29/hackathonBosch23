@@ -8,25 +8,25 @@ extern Adafruit_PWMServoDriver pwm;
 
 void controlShoulderFR(int angle)
 {
-  angle = constrain(angle, 0, SAFE_ANGLE_SHOULDER_FR);
+  angle = constrain(angle, MIN_SAFE_ANGLE_SHOULDER_FR, MAX_SAFE_ANGLE_SHOULDER_FR);
   pwm.setPWM(SERVO_NUM_SHOULDER_FR, 0, angleToPulse(angle));
 }
 
 void controlShoulderFL(int angle)
 {
-  angle = constrain(angle, 0, SAFE_ANGLE_SHOULDER_FL);
+  angle = constrain(angle, MIN_SAFE_ANGLE_SHOULDER_FL, MAX_SAFE_ANGLE_SHOULDER_FL);
   pwm.setPWM(SERVO_NUM_SHOULDER_FL, 0, angleToPulse(angle));
 }
 
 void controlShoulderRR(int angle)
 {
-  angle = constrain(angle, 0, SAFE_ANGLE_SHOULDER_RR);
+  angle = constrain(angle, MIN_SAFE_ANGLE_SHOULDER_RR, MAX_SAFE_ANGLE_SHOULDER_RR);
   pwm.setPWM(SERVO_NUM_SHOULDER_RR, 0, angleToPulse(angle));
 }
 
 void controlShoulderRL(int angle)
 {
-  angle = constrain(angle, 0, SAFE_ANGLE_SHOULDER_RL);
+  angle = constrain(angle, MIN_SAFE_ANGLE_SHOULDER_RL, MAX_SAFE_ANGLE_SHOULDER_RL);
   pwm.setPWM(SERVO_NUM_SHOULDER_RL, 0, angleToPulse(angle));
 }
 

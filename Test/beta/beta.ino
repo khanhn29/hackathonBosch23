@@ -195,7 +195,7 @@ void moveBackward()
     controlShoulderFL(OPEN_ANGLE_SHOULDER_FL);
     controlShoulderRR(MIDDLE_ANGLE_SHOULDER_RR);
     controlShoulderRL(OPEN_ANGLE_SHOULDER_RL);
-    delay(300);
+    delay(350);
     controlArmFR(RAISE_ANGLE_ARM_FR);
     controlArmFL(STAND_ANGLE_ARM_FL);
     controlArmRR(STAND_ANGLE_ARM_RR);
@@ -205,7 +205,7 @@ void moveBackward()
     controlShoulderFL(MIDDLE_ANGLE_SHOULDER_FL);
     controlShoulderRR(OPEN_ANGLE_SHOULDER_RR);
     controlShoulderRL(MIDDLE_ANGLE_SHOULDER_RL);
-    delay(300);
+    delay(350);
   }
   else
   {
@@ -217,6 +217,11 @@ void moveForward()
 {
   if(g_currentForm == SPIDER)
   {
+    controlShoulderFR(MIDDLE_ANGLE_SHOULDER_FR);
+    controlShoulderFL(OPEN_ANGLE_SHOULDER_FL);
+    controlShoulderRR(MIDDLE_ANGLE_SHOULDER_RR);
+    controlShoulderRL(OPEN_ANGLE_SHOULDER_RL);
+    delay(350);
     controlArmFR(STAND_ANGLE_ARM_FR);
     controlArmFL(RAISE_ANGLE_ARM_FL);
     controlArmRR(RAISE_ANGLE_ARM_RR);
@@ -226,17 +231,12 @@ void moveForward()
     controlShoulderFL(MIDDLE_ANGLE_SHOULDER_FL);
     controlShoulderRR(OPEN_ANGLE_SHOULDER_RR);
     controlShoulderRL(MIDDLE_ANGLE_SHOULDER_RL);
-    delay(300);
+    delay(350);
     controlArmFR(RAISE_ANGLE_ARM_FR);
     controlArmFL(STAND_ANGLE_ARM_FL);
     controlArmRR(STAND_ANGLE_ARM_RR);
     controlArmRL(RAISE_ANGLE_ARM_RL);
     delay(500);
-    controlShoulderFR(MIDDLE_ANGLE_SHOULDER_FR);
-    controlShoulderFL(OPEN_ANGLE_SHOULDER_FL);
-    controlShoulderRR(MIDDLE_ANGLE_SHOULDER_RR);
-    controlShoulderRL(OPEN_ANGLE_SHOULDER_RL);
-    delay(300);
   }
   else
   {
