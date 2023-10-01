@@ -56,6 +56,7 @@ void setup() {
 	pinMode(MOTOR_RL_IN2, OUTPUT);
   
   transformstoCar();
+  // test();
   delay(5000);
 }
 void executeCommand(String inputString)
@@ -318,7 +319,14 @@ void rotateLeft()
   }
   else
   {
-    
+    controlShoulderFR(CLOSE_ANGLE_SHOULDER_FR+10);
+    controlShoulderFL(CLOSE_ANGLE_SHOULDER_FL+10);
+    controlShoulderRR(CLOSE_ANGLE_SHOULDER_RR-10);
+    controlShoulderRL(CLOSE_ANGLE_SHOULDER_RL-10);
+    controlArmFR(CLOSE_ANGLE_ARM_FR);
+    controlArmRL(CLOSE_ANGLE_ARM_RL);
+    controlArmFL(CLOSE_ANGLE_ARM_FL);
+    controlArmRR(CLOSE_ANGLE_ARM_RR);
   }
 }
 void rotateRight()
@@ -367,16 +375,23 @@ void rotateRight()
   }
   else
   {
-
+    controlShoulderFR(CLOSE_ANGLE_SHOULDER_FR-12);
+    controlShoulderFL(CLOSE_ANGLE_SHOULDER_FL-10);
+    controlShoulderRR(CLOSE_ANGLE_SHOULDER_RR+10);
+    controlShoulderRL(CLOSE_ANGLE_SHOULDER_RL+10);
+    controlArmFR(CLOSE_ANGLE_ARM_FR);
+    controlArmRL(CLOSE_ANGLE_ARM_RL);
+    controlArmFL(CLOSE_ANGLE_ARM_FL);
+    controlArmRR(CLOSE_ANGLE_ARM_RR);
   }
 }
 
 void test()
 {
-  controlShoulderFR(MIDDLE_ANGLE_SHOULDER_FR);
-  controlShoulderFL(MIDDLE_ANGLE_SHOULDER_FL);
-  controlShoulderRR(MIDDLE_ANGLE_SHOULDER_RR);
-  controlShoulderRL(MIDDLE_ANGLE_SHOULDER_RL);
+  controlShoulderFR(CLOSE_ANGLE_SHOULDER_FR);
+  controlShoulderFL(CLOSE_ANGLE_SHOULDER_FL);
+  controlShoulderRR(CLOSE_ANGLE_SHOULDER_RR);
+  controlShoulderRL(CLOSE_ANGLE_SHOULDER_RL);
   controlArmFR(CLOSE_ANGLE_ARM_FR);
   controlArmRL(CLOSE_ANGLE_ARM_RL);
   controlArmFL(CLOSE_ANGLE_ARM_FL);
